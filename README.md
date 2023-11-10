@@ -1,1 +1,1 @@
-# BharatIntern_Task1
+Portfolio is a representation of my skills and experience as a student in web development using CSS, Java, and JavaScript. It includes information about my educational background, skills, project and my contact details.
