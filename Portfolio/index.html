@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinchana</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/838a6ec783.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+               <img src="images/SH.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                 </ul>  
+                 <i class="fas fa-bars" onclick="openmenu()"></i> 
+            </nav>
+            <div class="header-text">
+                <p>Student</p>
+                <h1>Hi, I'm <span>Sinchana Hebbar</span> from RNS Institute Of Technology</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--About---->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/me2.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h3 class="sub-title">Who Am I?</h3>
+                    <p>"Hello! My name is Sinchana Hebbar,and I'm a dedicated Master of Computer Applications student with a passion for technology and innovation. I'm constantly seeking new challenges and opportunities to learn and grow, both academically and professionally.In my free time, I enjoy listening to music and sketching, which help me to maintain a healthy work-life balance and stay creative. I'm excited about the future of technology and the opportunities it presents, and I'm committed to making a positive impact in the field.
+
+                        Thank you for taking the time to learn more about me. I hope that my portfolio will give you a better understanding of my skills and aspiration."</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>C Programming</span></li>
+                        <li><span>C++ Programming</span></li>
+                        <li><span>Java Programming</span></li>
+                        <li><span>Python Programming</span></li>
+                        <li><span>HTML</span></li>
+                        <li><span>CSS</span></li>
+                        <li><span>Javascript</span></li>
+                        <li><span>SQL</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>MCA<br> RNS Intstitue of Technology</span></li>
+                        <li><span>BSc<br> Vijaya College</span></li>
+                        <li><span>PUC<br> Vijaya Composite PU College</span></li>
+                        <li><span>School<br> Mahila Seva Samaja</span></li>
+                    </ul>
+                </div>
+                
+                </div>
+                </div>
+            </div>
+    </div>
+
+
+    <!----------------------Projects------------------->
+    <div id="projects">
+        <div class="container">
+        <h1 class="sub-title">My Project</h1>
+
+        <p> 
+
+            I have done a mini project on “Supermarket Management System” during my BSc where C++ is used as 
+            working and interface and file structures as storage.
+        </p>
+        <div class="projects-list">
+            <div class="projects">
+                <img src="images/image1.png">
+                <div class="layer">
+                    <h3>Using Computer Software </h3>
+                    <p>To get rid of manual entry and to replace old paper work system</p>
+                </div>
+            </div> 
+            <div class="projects">
+                <img src="images/image2.jpg">
+                <div class="layer">
+                    <h3>Managing and Maintaining Supermarket</h3>
+                    <p>To update prices and quantity of the products available,for billing purposes...</p>
+                </div>
+            </div>
+        </div>
+        <p>
+
+            I have developed "Supermarket Management System" to get rid from manual entry, and instead
+            use computer software to store it in a file. Here we perform various operations like inserting a
+            record, deleting a record, modifying a record, search and displaying a record. For this
+            purpose, need a software which can easily and conveniently maintain essential store details.
+
+        </p>    
+
+
+        <p>
+
+            The software needs 3 files each for different types of data set. This project "Supermarket
+            Management System" includes some facilities such as easy billing for the billing staff, easy
+            updating of the inventory for the inventory staff, and easy overall managing and updating
+            prices for the Manager.
+        </p>
+        </div>  
+    </div>      
+
+
+
+    <!---------------------Contact--------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-regular fa-envelope"></i> sinchanahebbar7@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/00-14"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/sinchana-hebbar-ab1972267/"><i class="fa-brands fa-linkedin"></i><br></a>
+                    </div>
+                </div>
+
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" placeholder="Name" name="Your Name" required>
+                        <input type="email" placeholder="Email" name="Your Email" required>
+                        <textarea name="Message" rows="5"  placeholder="Your Message" ></textarea>
+                        <button  type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        var tablinks= document.getElementsByClassName("tab-links");
+        var tabcontents= document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu=document.getElementById("sidemenu")
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+
+
+    </script>
+    <form name="submit-to-google-sheet">
+      </form>
+      
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwHFuX-zbsZptJ2t5Bx3wfkTQjyFopI3bj3qRPhwL_b_PksWHABED-Ne21xazlPgPd5/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                   msg.innerHTML="Message sent sucessfully"
+                   setTimeout(function(){
+                    msg.innerHTML = ""
+                   },5000)
+                   form.reset()    
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>   
+</body>
+</html>
