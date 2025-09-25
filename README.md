@@ -1,1 +1,1 @@
-Portfolio is a representation of my skills and experience as a student in web development using HTML, CSS and JavaScript. It includes information about my educational background, skills, project and my contact details.
+Portfolio is a representation of my skills and experience as a student in Web Development using HTML, CSS and JavaScript. It includes information about my educational background, skills, project and my contact details.
